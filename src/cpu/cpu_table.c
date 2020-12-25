@@ -75,6 +75,7 @@ const cpu_family_t cpu_families[] = {
 	.internal_name = "8088",
 	.cpus = (const CPU[]) {
 		{"1.79",    CPU_8088, fpus_8088,  1789773,    1, 5000, 0, 0, 0, 0, 0,0,0,0, 1},
+		{"2.38",    CPU_8088, fpus_8088,  2386364,    1, 5000, 0, 0, 0, 0, 0,0,0,0, 1},
 		{"4.77",    CPU_8088, fpus_8088,  4772728,    1, 5000, 0, 0, 0, 0, 0,0,0,0, 1},
 		{"7.16",    CPU_8088, fpus_8088,  7159092,    1, 5000, 0, 0, 0, 0, 0,0,0,0, 1},
 		{"8",       CPU_8088, fpus_8088,  8000000,    1, 5000, 0, 0, 0, 0, 0,0,0,0, 1},
@@ -100,6 +101,9 @@ const cpu_family_t cpu_families[] = {
 	.name = "8086",
 	.internal_name = "8086",
 	.cpus = (const CPU[]) {
+		{"1.79",    CPU_8088, fpus_8088,  1789773,    1, 5000, 0, 0, 0, 0, 0,0,0,0, 1},
+		{"2.38",    CPU_8088, fpus_8088,  2386364,    1, 5000, 0, 0, 0, 0, 0,0,0,0, 1},
+		{"4.77",    CPU_8088, fpus_8088,  4772728,    1, 5000, 0, 0, 0, 0, 0,0,0,0, 1},
 		{"1.79",    CPU_8086, fpus_8088,   1789773,    1, 5000, 0, 0, 0, CPU_ALTERNATE_XTAL, 0,0,0,0, 1},
 		{"7.16",    CPU_8086, fpus_8088,   7159092,    1, 5000, 0, 0, 0, CPU_ALTERNATE_XTAL, 0,0,0,0, 1},
 		{"8",       CPU_8086, fpus_8088,   8000000,    1, 5000, 0, 0, 0, 0, 0,0,0,0, 1},
@@ -575,6 +579,7 @@ const cpu_family_t cpu_families[] = {
 	.name = "Pentium MMX",
 	.internal_name = "pentium_p55c",
 	.cpus = (const CPU[]) {
+		{"133",              CPU_PENTIUM,    fpus_internal, 133333333, 2.0, 3520,  0x543,  0x543, 0, CPU_SUPPORTS_DYNAREC | CPU_REQUIRES_DYNAREC, 12,12, 6, 6, 16},
 		{"166",              CPU_PENTIUMMMX, fpus_internal, 166666666, 2.5, 2800,  0x543,  0x543, 0, CPU_SUPPORTS_DYNAREC | CPU_REQUIRES_DYNAREC, 15,15, 7, 7, 20},
 		{"200",              CPU_PENTIUMMMX, fpus_internal, 200000000, 3.0, 2800,  0x543,  0x543, 0, CPU_SUPPORTS_DYNAREC | CPU_REQUIRES_DYNAREC, 18,18, 9, 9, 24},
 		{"233",              CPU_PENTIUMMMX, fpus_internal, 233333333, 3.5, 2800,  0x543,  0x543, 0, CPU_SUPPORTS_DYNAREC | CPU_REQUIRES_DYNAREC, 21,21,10,10, 28},
@@ -613,6 +618,7 @@ const cpu_family_t cpu_families[] = {
 	.name = "Pentium OverDrive MMX",
 	.internal_name = "pentium_p55c_od",
 	.cpus = (const CPU[]) {
+		{"65",     CPU_PENTIUMMMX, fpus_internal,  65000000, 1.5, 3520, 0x1542, 0x1542, 0, CPU_SUPPORTS_DYNAREC | CPU_REQUIRES_DYNAREC | CPU_FIXED_MULTIPLIER,  7, 7,4,4,  9},
 		{"75",     CPU_PENTIUMMMX, fpus_internal,  75000000, 1.5, 3520, 0x1542, 0x1542, 0, CPU_SUPPORTS_DYNAREC | CPU_REQUIRES_DYNAREC | CPU_FIXED_MULTIPLIER,  7, 7,4,4,  9},
 		{"125",    CPU_PENTIUMMMX, fpus_internal, 125000000, 2.5, 3520, 0x1542, 0x1542, 0, CPU_SUPPORTS_DYNAREC | CPU_REQUIRES_DYNAREC | CPU_FIXED_MULTIPLIER, 12,12,7,7, 15},
 		{"150/60", CPU_PENTIUMMMX, fpus_internal, 150000000, 2.5, 3520, 0x1542, 0x1542, 0, CPU_SUPPORTS_DYNAREC | CPU_REQUIRES_DYNAREC | CPU_FIXED_MULTIPLIER, 15,15,7,7, 35/2},
@@ -932,6 +938,7 @@ const cpu_family_t cpu_families[] = {
 		{"466",       CPU_PENTIUM2D,  fpus_internal, 466666666, 7.0, 2050,  0x665,  0x665, 0, CPU_SUPPORTS_DYNAREC | CPU_REQUIRES_DYNAREC | CPU_FIXED_MULTIPLIER, 42,42,14,14, 56},
 		{"500",       CPU_PENTIUM2D,  fpus_internal, 500000000, 7.5, 2050,  0x665,  0x665, 0, CPU_SUPPORTS_DYNAREC | CPU_REQUIRES_DYNAREC | CPU_FIXED_MULTIPLIER, 45,45,15,15, 60},
 		{"533",       CPU_PENTIUM2D,  fpus_internal, 533333333, 8.0, 2050,  0x665,  0x665, 0, CPU_SUPPORTS_DYNAREC | CPU_REQUIRES_DYNAREC | CPU_FIXED_MULTIPLIER, 48,48,17,17, 64},
+		{"800",       CPU_PENTIUM2D,  fpus_internal, 800000000, 8.0, 2050,  0x665,  0x665, 0, CPU_SUPPORTS_DYNAREC | CPU_REQUIRES_DYNAREC | CPU_FIXED_MULTIPLIER, 48,48,17,17, 64},
 		{"", 0}
 	}
     }, {
