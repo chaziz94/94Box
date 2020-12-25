@@ -163,7 +163,7 @@ BEGIN
     POPUP "&Help"
     BEGIN
         MENUITEM "&Documentation...",           IDM_DOCS
-        MENUITEM "&About 86Box...",             IDM_ABOUT
+        MENUITEM "&About 94Box...",             IDM_ABOUT
     END
 END
 
