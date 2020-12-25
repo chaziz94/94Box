@@ -318,7 +318,7 @@ END
 
 DLG_CONFIG DIALOG DISCARDABLE  0, 0, 376, 256
 STYLE DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "86Box Settings"
+CAPTION "94Box Settings"
 FONT 9, "Segoe UI"
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,246,235,50,14
@@ -714,7 +714,7 @@ END
 /* Icon by Devcore - https://commons.wikimedia.org/wiki/File:Icon_PC_256x256.png */
  10                     ICON    DISCARDABLE     "win/icons/86Box-RB.ico"
 #else
-/* Icon by Devcore - https://commons.wikimedia.org/wiki/File:Icon_PC2_256x256.png */
+/* text currently not available */
  10                     ICON    DISCARDABLE     "win/icons/86Box.ico"
 #endif
  16                     ICON    DISCARDABLE     "win/icons/floppy_525.ico"
@@ -916,7 +916,7 @@ END
 
 STRINGTABLE DISCARDABLE 
 BEGIN
-    2048	"86Box"
+    2048	"94Box"
     IDS_2049	"Error"
     IDS_2050	"Fatal error"
     IDS_2051	"<reserved>"
@@ -924,7 +924,7 @@ BEGIN
     IDS_2053	"Speed"
     IDS_2054	"ZIP %03i %i (%s): %ls"
     IDS_2055	"ZIP images (*.IM?;*.ZDI)\0*.IM?;*.ZDI\0"
-    IDS_2056	"86Box could not find any usable ROM images.\n\nPlease <a href=""https://github.com/86Box/roms/releases/latest"">download</a> a ROM set and extract it into the ""roms"" directory."
+    IDS_2056	"94Box could not find any usable ROM images.\n\nPlease <a href=""https://github.com/86Box/roms/releases/latest"">download</a> a ROM set and extract it into the ""roms"" directory."
     IDS_2057	"(empty)"
     IDS_2058	"ZIP images (*.IM?;*.ZDI)\0*.IM?;*.ZDI\0All files (*.*)\0*.*\0"
     IDS_2059	"Turbo"
@@ -989,19 +989,19 @@ BEGIN
     IDS_2110	"Unable to initialize FreeType"
     IDS_2111	"Unable to initialize SDL, SDL2.dll is required"
     IDS_2112	"Are you sure you want to hard reset the emulated machine?"
-    IDS_2113	"Are you sure you want to exit 86Box?"
+    IDS_2113	"Are you sure you want to exit 94Box?"
     IDS_2114	"Unable to initialize Ghostscript"
     IDS_2115	"MO %i (%ls): %ls"
     IDS_2116	"MO images (*.IM?;*.MDI)\0*.IM?;*.MDI\0All files (*.*)\0*.*\0"
-    IDS_2117	"Welcome to 86Box!"
+    IDS_2117	"Welcome to 94Box!"
     IDS_2118	"Internal controller"
     IDS_2119	"Exit"
     IDS_2120	"No ROMs found"
     IDS_2121	"Do you want to save the settings?"
     IDS_2122	"This will hard reset the emulated machine."
     IDS_2123	"Save"
-    IDS_2124	"About 86Box"
-    IDS_2125	"86Box v" EMU_VERSION
+    IDS_2124	"About 94Box"
+    IDS_2125	"94Box v" EMU_VERSION
     IDS_2126	"An emulator of old computers\n\nAuthors: Sarah Walker, Miran Grca, Fred N. van Kempen (waltje), SA1988, MoochMcGee, reenigne, leilei, JohnElliott, greatpsycho, and others.\n\nReleased under the GNU General Public License version 2. See LICENSE for more information."
     IDS_2127	"OK"
     IDS_2128	"Hardware not available"
@@ -1168,7 +1168,7 @@ BEGIN
             VALUE "FileDescription", EMU_NAME "\0"
             VALUE "FileVersion", EMU_VERSION "\0"
             VALUE "InternalName", EMU_NAME "\0"
-            VALUE "LegalCopyright", "Copyright © 2007-2020 " EMU_NAME " contributors\0"
+            VALUE "LegalCopyright", "Copyright © 2007-2021 " EMU_NAME " contributors\0"
             VALUE "OriginalFilename", "86box.exe\0"
             VALUE "ProductName", EMU_NAME "\0"
             VALUE "ProductVersion", EMU_VERSION "\0"
