@@ -145,7 +145,7 @@ discord_init()
 	return;
 
     DiscordCreateParamsSetDefault(&params);
-    params.client_id = 651478134352248832;
+    params.client_id = 791921536420282388;
     params.flags = DiscordCreateFlags_NoRequireDiscord;
 
     result = discord_create(DISCORD_VERSION, &params, &discord_core);
